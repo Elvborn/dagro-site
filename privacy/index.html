@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privatlivspolitik – Dagro</title>
+<style>
+:root{color-scheme:light dark;--bg:#fbf8f3;--fg:#2b2a28;--muted:#6b665e;--accent:#3f6f6a;--line:#e4ddd2}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1b1a;--fg:#ece8e1;--muted:#a9a297;--accent:#8fc2bb;--line:#3a3733}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:42rem;margin:0 auto;padding:2rem 16px 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:0 0 .25rem}
+h2{font-size:1.15rem;margin:2rem 0 .5rem;padding-top:1rem;border-top:1px solid var(--line)}
+.meta,.lang{color:var(--muted);font-size:.95rem}
+a{color:var(--accent)}
+ul{padding-inline-start:1.25rem}
+li{margin:.35rem 0}
+code{font-size:.9em;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<main>
+<p class="lang"><a href="en/" hreflang="en" lang="en">Read in English</a></p>
+<h1>Privatlivspolitik for Dagro</h1>
+<p class="meta">Gælder fra 20. november 2026</p>
+
+<h2>Kort fortalt</h2>
+<p>Dagro er en todo- og rutine-app, der virker uden internet. Alt, hvad du skriver i appen, bliver på din telefon. Vi indsamler ingen data om dig.</p>
+<ul>
+<li>Ingen konto og intet login.</li>
+<li>Ingen reklamer.</li>
+<li>Ingen analyse, sporing eller statistik.</li>
+<li>Vi deler og sælger ingen data, for vi får ingen.</li>
+<li>Dagro har ingen server. Selve appen sender intet over internettet.</li>
+</ul>
+
+<h2>Hvad appen gemmer</h2>
+<p>Dine todos, rutiner, det, du har klaret eller sprunget over, noter og indstillinger gemmes i en database på telefonen. Kun du og appen har adgang til den. Vi kan ikke se den.</p>
+
+<h2>Tilladelser, og hvad de bruges til</h2>
+<ul>
+<li><strong>Notifikationer</strong> (<code>POST_NOTIFICATIONS</code>): til de påmindelser, du selv har sat op. Appen spørger først, når den får brug for det.</li>
+<li><strong>Præcise alarmer</strong> (<code>SCHEDULE_EXACT_ALARM</code>): så en påmindelse kommer på det rigtige minut. Uden den kommer påmindelser stadig, bare lidt mindre præcist.</li>
+<li><strong>Efter genstart</strong> (<code>RECEIVE_BOOT_COMPLETED</code>): Android glemmer alarmer, når telefonen genstarter. Appen planlægger dem igen.</li>
+<li><strong>Kalender</strong> (<code>READ_CALENDAR</code>): kun hvis du slår "Vis begivenheder fra kalenderen" til. Appen læser dagens begivenheder fra de kalendere, du vælger, og viser dem. Begivenhederne kopieres ikke ind i appen og sendes ingen steder hen. Appen ændrer aldrig noget i din kalender. Laver du en todo ud fra en begivenhed, eller skjuler du en, husker appen kun begivenhedens id og starttidspunkt.</li>
+<li><strong>Køb</strong> (<code>com.android.vending.BILLING</code>): til engangskøbet, der låser appen op. Se "Køb" nedenfor.</li>
+<li><strong>Internet og netværksstatus</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>): tilføjes af Googles egne biblioteker til køb og bedømmelse i Google Play. Dagros egen kode bruger ikke internettet.</li>
+<li><strong>Baggrundsarbejde</strong> (<code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code>): tilføjes af Androids bibliotek til baggrundsopgaver, som widgetten bruger til at holde sig opdateret.</li>
+</ul>
+
+<h2>Sikkerhedskopi</h2>
+<p>Har du slået sikkerhedskopiering til på telefonen, tager Android en kopi af appens database og gemmer den på din egen Google-konto. Så kan dine data komme med til en ny telefon. Det styres af Android og Google, ikke af os, og vi har ingen adgang til kopien. Du kan slå det fra i telefonens indstillinger.</p>
+
+<h2>Eksport og sletning</h2>
+<ul>
+<li><strong>Eksportér data</strong> (Indstillinger): gemmer alle dine data som en fil et sted, du vælger. Filen forlader kun telefonen, hvis du selv sender den videre.</li>
+<li><strong>Slet alle data</strong> (Indstillinger): fjerner alle todos, rutiner, noter og indstillinger fra telefonen.</li>
+<li><strong>Afinstallér appen</strong>: så slettes appens data fra telefonen. En eventuel sikkerhedskopi på din Google-konto kan du slette i Googles indstillinger.</li>
+</ul>
+<p>Du kan altid se, eksportere og slette dine data, også efter prøveperioden og uden køb.</p>
+
+<h2>Køb</h2>
+<p>Engangskøbet foregår gennem Google Play. Google håndterer betalingen og dine betalingsoplysninger. Vi får kun at vide, at appen er låst op. Googles biblioteker kan sende tekniske oplysninger til Google for at gennemføre købet. Det er omfattet af <a href="https://policies.google.com/privacy?hl=da">Googles privatlivspolitik</a>.</p>
+
+<h2>Feedback og bedømmelse</h2>
+<ul>
+<li><strong>Send feedback</strong> åbner en formular i din browser. Appversion, Android-version, telefonmodel og sprog står udfyldt i formularen, og du kan fjerne dem, før du sender. Intet sendes, før du selv trykker send. Formularen ligger hos Google Forms.</li>
+<li><strong>Bedøm Dagro</strong> åbner appens side i Play Butik. Én gang kan appen også bede Google Play om at vise Googles egen bedømmelsesboks. Det, du skriver der, går til Google.</li>
+</ul>
+
+<h2>Telefonens assistent</h2>
+<p>På Android 16 og nyere kan telefonens assistent (fx Gemini) tilføje todos, læse dagen op og markere ting som klaret. Selve arbejdet sker på telefonen. Assistenten kan sende det, du siger, og de titler, den får, til sine egne servere. Det gælder assistentens egen privatlivspolitik. Du kan slå det fra under Indstillinger → Assistent.</p>
+
+<h2>Ændringer</h2>
+<p>Ændrer vi denne politik, opdaterer vi den her og datoen øverst.</p>
+
+<h2>Kontakt</h2>
+<p>Spørgsmål er velkomne: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
+</main>
+</body>
+</html>
